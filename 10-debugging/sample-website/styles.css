@@ -25,7 +25,12 @@ body {
 
 .dark-background-container {
   background: var(--dark-blue);
-  background: linear-gradient(34deg, var(--dark-blue) 6%, var(--blue) 46%, var(--purple) 91%);
+  background: linear-gradient(
+    34deg,
+    var(--dark-blue) 6%,
+    var(--blue) 46%,
+    var(--purple) 91%
+  );
   color: var(--white);
 }
 
@@ -151,6 +156,7 @@ body {
   padding: 15px;
   background-color: var(--darker-blue);
   box-sizing: border-box;
+  /* z-index: 1000px; */
 }
 
 .navbar-toggle-trigger {
