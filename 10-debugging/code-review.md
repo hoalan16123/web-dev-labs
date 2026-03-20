@@ -69,7 +69,7 @@ After fix:
 
 
 
-# Issue #3 Code Correctness/Optimization with Brittle DOM Traversal
+### Issue #3 Code Correctness/Optimization with Brittle DOM Traversal
 
 Using .parentElement.parentElement.parentElement is very problematic, because while in this situation it is working,
 it collapses if there are any structural changes within this section, as the current method relies very heavily
@@ -105,7 +105,7 @@ Updated code:
       event.currentTarget.closest(".card").nextElementSibling;
 
 
-# Issue #4 Accessibility with Input Text
+### Issue #4 Accessibility with Input Text
 
 When clicking the Name, Username, Email, and Phone Number, it doesn't automatically
 allow you to type into its associated text box. This is less accessible as it requires the user
